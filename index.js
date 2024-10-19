@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Serve static files (e.g., CSS, JS)
-app.use(express.static(path.join(__dirname, '../public'))); // Adjust path for static files
+app.use(express.static(path.join(__dirname, 'public'))); // Adjust path for static files
 
 // Serve the HTML form
 app.get('/', (req, res) => {
@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 // Handle form submission and PDF generation
 app.post('/generate-pdf', (req, res) => {
     console.log('Received a POST request to /generate-pdf');
-    const templatePath = path.join(__dirname, '../public/اشهاد الشهود.docx'); // Adjust path to your Word template
+    const templatePath = path.join(__dirname, 'public/اشهاد الشهود.docx'); // Adjust path to your Word template
 
     // Read the DOCX template
     fs.readFile(templatePath, 'binary', (err, content) => {
