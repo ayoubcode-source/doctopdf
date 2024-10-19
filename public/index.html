@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نموذج إدخال بيانات</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar" dir="rtl">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">شعاركم هنا</a>
+        </div>
+        <ul id="nav-elements" class="nav">
+          <li><a class="active" href="index.html">الرئيسية</a></li>
+          <li><a href="#aboutus">رؤيتنا</a></li>
+          <li><a href="#practice-areas">نماذج</a></li>
+          <li><a href="#contactus">اتصل بنا</a></li>
+        </ul>
+
+        <ul id="bar-3" class="nav">
+          <i class="fa-solid fa-bars"></i>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>نموذج اشهاد الشهود</h1>
+    <form
+      class="template-form"
+      action="/generate-pdf"
+      method="POST"
+      target="_blank"
+    >
+      <label for="witness1_name">اسم الشاهد الأول:</label>
+      <input
+        type="text"
+        id="witness1_name"
+        name="witness1_name"
+        required
+      /><br />
+
+      <label for="witness1_id">رقم بطاقة التعريف الوطنية للشاهد الأول:</label>
+      <input type="text" id="witness1_id" name="witness1_id" required /><br />
+
+      <label for="witness1_address">عنوان الشاهد الأول:</label>
+      <input
+        type="text"
+        id="witness1_address"
+        name="witness1_address"
+        required
+      /><br />
+
+      <label for="witness2_name">اسم الشاهد الثاني:</label>
+      <input
+        type="text"
+        id="witness2_name"
+        name="witness2_name"
+        required
+      /><br />
+
+      <label for="witness2_id">رقم بطاقة التعريف الوطنية للشاهد الثاني:</label>
+      <input type="text" id="witness2_id" name="witness2_id" required /><br />
+
+      <label for="witness2_address">عنوان الشاهد الثاني:</label>
+      <input
+        type="text"
+        id="witness2_address"
+        name="witness2_address"
+        required
+      /><br />
+
+      <label for="declaration_content">مضمون الإشهاد:</label>
+      <input
+        type="text"
+        id="declaration_content"
+        name="declaration_content"
+        required
+      /><br />
+
+      <label for="date">التاريخ:</label>
+      <input type="date" id="date" name="date" required /><br />
+
+      <input type="submit" value="إنشاء PDF" />
+    </form>
+    <div class="contact">
+      <form class="contact-form" action="#">
+        <input type="text" placeholder="الاسم" />
+        <input type="text" placeholder="النسب" />
+        <input type="email" placeholder="البريد الالكتروني" />
+        <input type="number" placeholder="رقم الهاتف" />
+        <textarea name="" id="text-area" placeholder="ماهي مشكلتك"></textarea>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+   
+   body {
+        font-family: Arial, sans-serif;
+        direction: rtl; /* Right-to-left for Arabic */
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      nav{
+        background-color: #45a049;
+        color: white;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: none;
+      color: white;
+    }
+
+    #nav-elements a{
+        position: relative;
+    
+    }
+    #nav-elements a::before{
+        position: absolute;
+        content: '';
+        border-bottom: #272727;
+        width: 0%;
+        right: 0;
+        bottom: -10px;
+        height: 3px;
+        background-color: white;
+        transition: all .2s;
+    }
+    
+    #nav-elements a:hover::before{
+        width: 100%;
+    }
+    
+      #nav-elements{
+        width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+      }
+
+
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .template-form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px; 
+        margin: 20px auto;
+      }
+      .template-form label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+        color: #555;
+      }
+      .template-form input[type="text"],
+      .template-form input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+      input[type="text"]:focus,
+      input[type="date"]:focus {
+        border-color: #4caf50;
+        outline: none;
+      }
+      .template-form input[type="submit"] {
+        background-color: #4caf50; /* Green */
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        width: 100%;
+      }
+      .template-form input[type="submit"]:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+      .template-form .form-group {
+        margin-bottom: 15px;
+      }
+
+
+
+      .contact{
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact-form{
+        height: 30rem;
+        width: 20rem;
+        /* display: flex;
+        justify-content: center; */
+      }
+
+      .contact-form input,textarea{
+        height: 50px;
+        width: 20rem;
+        margin-bottom: 30px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 1px gray solid;
+
+      }
+      
