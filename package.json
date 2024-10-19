@@ -1,10 +1,14 @@
 {
+  "name": "doctopdf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "docxtemplater": "^3.51.0",
-    "express": "^4.21.1",
-    "libreoffice-convert": "^1.6.0",
-    "pdf-lib": "^1.17.1",
-    "pizzip": "^3.1.7"
+    "express": "^4.17.1",
+    "pizzip": "^3.0.6",
+    "docxtemplater": "^3.21.2",
+    "libreoffice-convert": "^1.4.0"
   }
 }
